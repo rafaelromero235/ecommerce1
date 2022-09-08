@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Simple Cart</title>
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container flex">
+      <a href="#" class="nav__logo flex elements--center">
+        <span>👟Shoes Store</span>
+      </a>
+    </nav>
+  </header>
+
+  <section class="home" id="home">
+    <div class="home__image--bg">
+      <div class="home__container container">
+        <div class="home__box flex elements--center">
+          <h1 class="home__title"><span class="big--span">Zapatillas</span></h1>
+        </div>
+      </div>
+      <img class="home__img" src="/assets/img/oie_transparent.png" alt="michi">
+    </div>
+  </section>
+
+  <main class="main container grid">
+
+
+
+    <section class="products" id="products">
+      <div class="products__container grid">
+        
+        <div>
+          <article class="products__item">
+            <img class="products__image" src="https://www.seekpng.com/png/detail/332-3325114_related-keywords-suggestions-for-transparent-cats-siamese-cat.png" alt="">
+
+            <div class="products__data">
+              <div class="products__info">
+                <h2 class="products__title">Siamens</h2>
+                <span class="products__stock">Cant: 5</span>
+              </div>
+
+              <div class="products__button">
+                <button type="button" class="button"><i class='bx bx-add-to-queue' ></i></button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="cart" id="cart">
+      <div class="cart__container grid">
+        <h2 class="cart__title">Tus Articulos: </h2>
+
+        <ul class="cart__list">
+
+          <li class="cart__item">
+            <article class="cart__article grid">
+              <img class="cart__image" src="https://www.seekpng.com/png/detail/332-3325114_related-keywords-suggestions-for-transparent-cats-siamese-cat.png" alt="Siamens">
+
+              <div class="cart__data">
+                <h2 class="cart__name">Siamens</h2>
+
+                <div class="cart__minmax">
+                  <button type="button" class="cart__button btn--remove" id="cart-remove"><i class='bx bx-minus' ></i></button>
+                  <span id="cart-qty">1</span>
+                  <button type="button" class="cart__button btn--add" id="cart-add"><i class='bx bx-plus' ></i></button>
+                </div>
+
+              </div>
+              <div class="cart__delete">
+                <button type="button" class="cart__button btn--delete" id="cart-delete"><i class='bx bx-trash' ></i></button>
+              </div>
+            </article>
+          </li>
+
+        </ul>
+
+        <div class="cart__checkout">
+          <h3 class="cart__count">Articulos: <span id="cart-count">2</span></h3>
+          <h2 class="cart__total">Total: $<span id="cart-total">35</span></h2>
+
+          <div class="cart__checkout">
+            <button type="button" class="cart__button btn--checkout">comprar <i class='bx bx-credit-card' ></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container container">
+      <p class="footer__copy">
+        <span>👟Shoes Store</span> <br> 2022 All rigths reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
